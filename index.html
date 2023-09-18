@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Style/main.css">
+        <!--Favicon-->
+        <link rel="shortcut icon" href="Assets/Images/Icon.png" />
+        <!--Title displayed in browser tab-->
+        <title>Layers of Love</title>
+    </head>
+    <!--Body of Document-->
+    <body>
+        <!--Top Bar with Navigation Button-->
+        <div class="topBar">
+            <span onclick="openNav()">&#9776;</span>
+            <img class="webTitle" src="Assets/Images/title.jpg" alt="Website Title: Layers of Love">
+        </div>
+        <!--Slideout Navigation-->
+        <div id="sideNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href = "index.html">HOME</a>
+                <a href = "#cakeDesigns">CAKE DESIGNS</a>
+                <a href = "#royalIcing">ROYAL ICING</a>
+                <a href = "#fondant">FONDANT</a>
+                <a href = "#marbling">MARBLING</a>
+            </div>
+        </div>
+        <!--Different Home Images Based on Screen Sizes-->
+        <img class="homePic" src="Assets/Images/homePage.png"
+            srcset="Assets/Images/homePage.png 2400w,
+                    Assets/Images/homePageMed.png 1400w, 
+                    Assets/Images/homePageSmall.png 1000w"
+            alt="Demonstrate Creativity with Logo of Website">
+        <!--Cake Design Section-->
+        <div id="cakeDesigns" class="cakeDesigns">
+            <h1>CAKE DESIGNS</h1>
+            <p id="cakeDesignText">VIEW THE DIFFERENT WAYS YOU CAN<br>EXPRESS YOUR CREATIVITY IN CAKE DESIGNS</p>
+            <article class="grid">
+                <div class="grid-item cakes">
+                    <img src="Assets/Images/butterflies.jpg" alt="Purple Butterfly Cake">
+                    <div class="imgHover">
+                        <p>PURPLE CAKE DECORATED WITH BUTTERFLIES & PEARLS</p>
+                    </div>
+                </div>
+                <div class="grid-item cakes">
+                    <img src="Assets/Images/pinkFlowers.jpg" alt="Cake with Pink Flowers">
+                    <div class="imgHover">
+                        <p>PINK FONDANT MARBLING & FLOWER DECOR</p>
+                    </div>
+                </div>
+                <div class="grid-item cakes">
+                    <img src="Assets/Images/lemonCake.jpg" alt="Cake with Blue Flowers">
+                    <div class="imgHover">
+                        <p>WHITE CHOCOLATE GANACHE DRIP & MACAROONS DECOR</p>
+                    </div>
+                </div>
+                <div class="grid-item cakes">
+                    <img src="Assets/Images/blueFlowers.jpg" alt="Yellow cake with lemon decor">
+                    <div class="imgHover">
+                        <p>BLUE PIPED FLOWERS USING ROYAL ICING</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--Royal Icing Section-->
+        <div id="royalIcing" class="royalIcing">
+            <article class="grid2">
+                <div class="grid-item box1">
+                    <h2>ROYAL ICING</h2>
+                    <p>Utilizing royal icing is a common way to decorate cakes. Details can be easily piped and it sets 
+                        with a hard finish. Different nozzles can also be used, resulting in intricate frosting effects.</p>
+                </div>
+                <div class="grid-item box2">
+                    <img src="Assets/Images/royalIcing.jpg" alt="Green Royal Icing Cake">
+                </div>
+            </article>
+        </div>
+        <!--Fondant Section-->
+        <div id="fondant" class="fondant">
+            <h3>FONDANT</h3>
+            <article class="grid3">
+                <div class="fondantGrid-item">
+                    <img src="Assets/Images/knead.jpg" alt="Kneading the fondant">
+                    <p>KNEAD</p>
+                </div>
+                <div class="fondantGrid-item">
+                    <img src="Assets/Images/roll.jpg" alt="Rolling the fondant">
+                    <p>ROLL</p>
+                </div>
+                <div class="fondantGrid-item">
+                    <img src="Assets/Images/cover.jpg" alt="Covering the cake with fondant">
+                    <p>COVER</p>
+                </div>
+                <div class="fondantGrid-item">
+                    <img src="Assets/Images/smooth.jpg" alt="Smoothing the fondant on the cake">
+                    <p>SMOOTH</p>
+                </div>
+                <div class="fondantGrid-item">
+                    <img src="Assets/Images/decorate.jpg" alt="Flower made of fondant">
+                    <p>DECORATE</p>
+                </div>
+                <div class="fondantGrid-item">
+                    <img src="Assets/Images/finalize.jpg" alt="Two cakes decorated with fondant">
+                    <p>FINALIZE</p>
+                </div>
+            </article>
+            <p>Fondant is a type of icing used to cover cakes and it can be used to create cake decorations.
+                You can think of fondant as a clay texture in which you can mold, roll, and manipulate into shapes.
+            </p>
+        </div>
+        <!--Marbling Section-->
+        <div id="marbling" class="marbling">
+            <article class="grid4">
+                <div class="marble1">
+                    <img src="Assets/Images/marble1.jpg" alt="Purple Marble Glaze Cake">
+                </div>
+                <div class="marbleText1">
+                    <p>A glaze is a glossy coating applied to the outer surface of the cake through the method of pour-over and dripping.
+                        The primary ingredients are sugar, gelatin, condensed milk, white chocolate, and gel food coloring. 
+                    </p>
+                </div>
+                <div class="marble2">
+                    <img src="Assets/Images/marble2.jpg" alt="Marble glaze being poured over cake">
+                    <h4>MARBLING</h4>
+                </div>
+                <div class="marbleText2">
+                    <p> The glaze mixture is heated to a specific temperature to be thin enough to be easily poured over a cake, resulting
+                        in a shiny finish. Utilizing a large rimmed baking sheet to catch the run-off glaze is the best way to pour.
+                    </p>
+                </div>
+                <div class="marble3">
+                    <img src="Assets/Images/marble3.jpg" alt="Heart shaped cake with pink marble glaze">
+                </div>
+            </article>
+        </div>
+        <!--Javascript for Slideout Navigation-->
+        <script>
+            function openNav() {
+                document.getElementById("sideNav").style.width = "100%";
+            }
+            function closeNav() {
+                document.getElementById("sideNav").style.width = "0%";
+            }
+        </script>
+    </body>
+</html>
