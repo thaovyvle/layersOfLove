@@ -1,5 +1,6 @@
 # Layers of Love 
 Responsive Single-Page Website
+View the Live Site Here: https://thaovyvle.github.io/layersOfLove/
 # Project Task:
 
 Design a single-page website that demonstrates creativity. It should be a responsive site that works on at least 3 screen sizes. Website will include:
